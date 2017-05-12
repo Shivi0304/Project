@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         <table width="100%" cellpadding="4" cellspacing="4">
+    <tr>
+    <td colspan="2" align="center"><h3>USER DETAIL</h3></td>
+    </tr>
+        <tr>
+            <td align="right">
+                Name :
+            </td>
+            <td align="left">
+                <asp:TextBox ID="txtName" runat="server" Width="200px" autocomplete="off"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Address :
+            </td>
+            <td align="left">
+                <asp:TextBox ID="txtAddress" runat="server" Width="200px" autocomplete="off"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                 </td>
+            <td align="left">
+                <asp:Label ID="lblmessage" runat="server" style="color: #FF3300"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                 </td>
+            <td align="left">
+                <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Save" />
+            </td>
+        </tr>
+    </table>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
